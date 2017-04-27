@@ -6,7 +6,7 @@ os.chdir("C:/Users/Seb/Desktop/py/Music")
 melodie = [60,62,64,65,67,69,71,72,74,76]
 accords = [24,26,28,29,31,33,35,36,38,40]
 dur = [0.25,0.5,1]
-# create your MIDI object
+
 mf = MIDIFile(1)     # only 1 track
 track = 0   # the only track
 """
@@ -35,7 +35,7 @@ mf.addNote(track, channel, pitch, time, duration, volume)
 """
 
 def musique():
-	time = 0    # start at the beginning
+	time = 0    
 	mf.addTrackName(track, time, "Sample Track")
 	mf.addTempo(track, time, 120)
 	
